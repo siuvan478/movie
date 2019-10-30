@@ -34,6 +34,7 @@
         if (src == null || src === '') {
             src = 'https://lilimovie.rocks';
         } else {
+            src = encodeURI(src);
             src = src.replace("?", "");
         }
         alert(src);
